@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		7863B1C7296C8E8700B337E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7863B1C6296C8E8700B337E5 /* AppDelegate.swift */; };
 		7863B1C9296C8E8700B337E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7863B1C8296C8E8700B337E5 /* SceneDelegate.swift */; };
-		7863B1CB296C8E8700B337E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7863B1CA296C8E8700B337E5 /* ViewController.swift */; };
 		7863B1CE296C8E8700B337E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7863B1CC296C8E8700B337E5 /* Main.storyboard */; };
 		7863B1D1296C8E8700B337E5 /* A_Prudnikova_HW27.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7863B1CF296C8E8700B337E5 /* A_Prudnikova_HW27.xcdatamodeld */; };
 		7863B1D3296C8E8900B337E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7863B1D2296C8E8900B337E5 /* Assets.xcassets */; };
 		7863B1D6296C8E8900B337E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7863B1D4296C8E8900B337E5 /* LaunchScreen.storyboard */; };
+		788A2FF5296D672500EF9A0B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A2FF4296D672500EF9A0B /* CategoryViewController.swift */; };
+		788A2FF7296D675300EF9A0B /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A2FF6296D675300EF9A0B /* ToDoListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7863B1C3296C8E8700B337E5 /* A.Prudnikova-HW27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A.Prudnikova-HW27.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7863B1C6296C8E8700B337E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7863B1C8296C8E8700B337E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7863B1CA296C8E8700B337E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7863B1CD296C8E8700B337E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7863B1D0296C8E8700B337E5 /* A_Prudnikova_HW27.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = A_Prudnikova_HW27.xcdatamodel; sourceTree = "<group>"; };
 		7863B1D2296C8E8900B337E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7863B1D5296C8E8900B337E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7863B1D7296C8E8900B337E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		788A2FF4296D672500EF9A0B /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		788A2FF6296D675300EF9A0B /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78638ED0296C8F4200105BE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7863B1CF296C8E8700B337E5 /* A_Prudnikova_HW27.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78638ED1296C8F6900105BE3 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				7863B1C6296C8E8700B337E5 /* AppDelegate.swift */,
+				7863B1C8296C8E8700B337E5 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
 		7863B1BA296C8E8700B337E5 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +77,32 @@
 		7863B1C5296C8E8700B337E5 /* A.Prudnikova-HW27 */ = {
 			isa = PBXGroup;
 			children = (
-				7863B1C6296C8E8700B337E5 /* AppDelegate.swift */,
-				7863B1C8296C8E8700B337E5 /* SceneDelegate.swift */,
-				7863B1CA296C8E8700B337E5 /* ViewController.swift */,
-				7863B1CC296C8E8700B337E5 /* Main.storyboard */,
+				78638ED0296C8F4200105BE3 /* Models */,
+				788A2FF2296D669C00EF9A0B /* views */,
+				788A2FF3296D66BC00EF9A0B /* Controllers */,
+				78638ED1296C8F6900105BE3 /* AppDelegates */,
 				7863B1D2296C8E8900B337E5 /* Assets.xcassets */,
-				7863B1D4296C8E8900B337E5 /* LaunchScreen.storyboard */,
 				7863B1D7296C8E8900B337E5 /* Info.plist */,
-				7863B1CF296C8E8700B337E5 /* A_Prudnikova_HW27.xcdatamodeld */,
 			);
 			path = "A.Prudnikova-HW27";
+			sourceTree = "<group>";
+		};
+		788A2FF2296D669C00EF9A0B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7863B1CC296C8E8700B337E5 /* Main.storyboard */,
+				7863B1D4296C8E8900B337E5 /* LaunchScreen.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		788A2FF3296D66BC00EF9A0B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				788A2FF4296D672500EF9A0B /* CategoryViewController.swift */,
+				788A2FF6296D675300EF9A0B /* ToDoListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				788A2FF5296D672500EF9A0B /* CategoryViewController.swift in Sources */,
 				7863B1D1296C8E8700B337E5 /* A_Prudnikova_HW27.xcdatamodeld in Sources */,
-				7863B1CB296C8E8700B337E5 /* ViewController.swift in Sources */,
 				7863B1C7296C8E8700B337E5 /* AppDelegate.swift in Sources */,
+				788A2FF7296D675300EF9A0B /* ToDoListViewController.swift in Sources */,
 				7863B1C9296C8E8700B337E5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
